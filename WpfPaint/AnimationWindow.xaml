@@ -1,0 +1,210 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPaint"
+        xmlns:WpfEditingControlLibrary="clr-namespace:WpfEditingControlLibrary;assembly=WpfEditingControlLibrary" xmlns:WpfControlLibrary1="clr-namespace:WpfControlLibrary1;assembly=WpfControlLibrary1" x:Class="WpfPaint.AnimationWindow"
+        mc:Ignorable="d"
+        Title="AnimationWindow" Height="612.256" Width="964.693">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="#FFF4F4F5" RadiusY="3" RadiusX="3" Stroke="Black"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="#FFF4F4F5" RadiusY="3" RadiusX="3" Stroke="Black"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="#FFF4F4F5" RadiusY="3" RadiusX="3" Stroke="Black"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle Fill="#FFF4F4F5" RadiusY="3" RadiusX="3" Stroke="Black"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--<DataTemplate x:key="TimelineEventsTemplate" DataType="{x:Type local:TimeLine}">
+            <Border>
+                <local:Timeline Background="Transparent"/>
+            </Border>
+        </DataTemplate> -->
+    </Window.Resources>
+    <Grid Margin="0,0,-8,-21">
+
+        <RibbonTwoLineText HorizontalAlignment="Left" Margin="617,85,0,0" VerticalAlignment="Top" Width="100"/>
+        <Ribbon HorizontalAlignment="Left" Height="157" Margin="0,1,0,0" VerticalAlignment="Top" Width="957" SelectionChanged="Ribbon_SelectionChanged">
+            <RibbonTab Header="Home" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="957" Margin="0,0,-2,-17">
+                <RibbonGroup Header="File" Height="105" Margin="0" VerticalAlignment="Top" Width="144">
+                    <RibbonButton x:Name="Save_btn" HorizontalAlignment="Left" Margin="10,0,-53,-39" Width="47" BorderBrush="Black" Background="#FFCED9DA" Click="Save_btn_Click"/>
+                    <Label Content="Save as" Margin="10,10,12,-33"/>
+                    <RibbonButton x:Name="ButtonLoad" Content="RibbonButton" HorizontalAlignment="Left" Height="38" Margin="71,43,-114,-73" VerticalAlignment="Top" Width="47" BorderBrush="Black" Background="#FFCED9DA" Click="ButtonLoad_Click_2"/>
+                    <RibbonButton x:Name="Export_button" HorizontalAlignment="Left" Height="40" Margin="71,-9,-114,-23" VerticalAlignment="Top" Width="47" BorderBrush="Black" Background="#FFCED9DA" Click="RibbonButton_Click"/>
+                    <RibbonButton x:Name="Btn_copy" Content="Copy" Margin="-60,48,0,0" VerticalAlignment="Top" Height="36" HorizontalAlignment="Left" Width="44" Click="Btn_copy_Click" BorderBrush="Black" Background="#FFCED9DA"/>
+                    <Label Content="Export" Margin="4,-78,71,53"/>
+                    <Label Content="Load" HorizontalAlignment="Left" Margin="7,-33,-43,0" VerticalAlignment="Top"/>
+                    <Label Content="Copy" HorizontalAlignment="Left" Margin="-56,-31,0,0" VerticalAlignment="Top"/>
+                </RibbonGroup>
+                <RibbonGroup Header="Editing" Height="105" Margin="0" VerticalAlignment="Top" Width="188">
+                    <ComboBox x:Name="BrushComboBox" HorizontalAlignment="Left" Margin="90,10,-80,52" Width="88" SelectionChanged="BrushComboBox_SelectionChanged" IsEditable="True" RenderTransformOrigin="0.5,0.5">
+                        <ComboBoxItem x:Name="Item_Pencil" IsSelected="True" Selected="Item_Pencil_Selected" Content="Pencil"/>
+                        <ComboBoxItem x:Name="Item_Thinbrush" Selected="Item_Thinbrush_Selected" Content="Thin Brush"/>
+                        <ComboBoxItem x:Name="Item_Midbrush" Selected="Item_Midbrush_Selected" Content="Medium Brush"/>
+                        <ComboBoxItem x:Name="Item_Thickbrush" Selected="Item_Thickbrush_Selected" Content="Thick Brush"/>
+                    </ComboBox>
+                    <Button x:Name="BtnZoom1" Content="" HorizontalAlignment="Left" Margin="-101,67,0,-44" VerticalAlignment="Top" Width="19" Height="17" Click="ButtonZoom1_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\zoom_1.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnZoom2" Content="" HorizontalAlignment="Left" Margin="-79,67,0,1" Width="19" Click="BtnZoom2_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\zoom_2.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnText_block" Content="" HorizontalAlignment="Left" Margin="-55,68,0,-44" VerticalAlignment="Top" Width="21" Height="16" Click="BtnText_block_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\ui_textbox.PNG"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnDraw_text" Content="" HorizontalAlignment="Left" Margin="-24,0,0,-44" Width="18" Click="BtnDraw_text_Click" Height="17" VerticalAlignment="Bottom">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\draw_text.jpg"/>
+                        </Button.Background>
+                    </Button>
+                    <ComboBox HorizontalAlignment="Right" Margin="-9,0,-51,0" Width="88" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
+                        <ComboBoxItem x:Name="Item_BlackLine" IsSelected="True" Selected="Item_BlackLine_Selected" Content="Black Line"/>
+                        <ComboBoxItem x:Name="Item_RedLine" Selected="Item_RedLine_Selected" Content="Red Line"/>
+                        <ComboBoxItem x:Name="Item_BlueLine" Selected="Item_BlueLine_Selected" Content="Blue Line"/>
+                    </ComboBox>
+                    <CheckBox x:Name="SwitchHighliter" Content="Highlighter" HorizontalAlignment="Left" Margin="-125,9,0,0" VerticalAlignment="Top" Checked="SwitchHighliter_Checked" Unchecked="SwitchHighliter_Unchecked"/>
+                    <Button x:Name="BtnDraw_triangle" Content="" Margin="-28,44,0,-31" Click="BtnDraw_triangle_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\triangle.PNG"/>
+                        </Button.Background>
+                    </Button>
+                    <CheckBox x:Name="Btn_Background_colour" Content="Dark Mode" HorizontalAlignment="Left" Margin="-125,29,0,-14" VerticalAlignment="Top" Checked="Btn_Background_colour_Checked" Unchecked="Btn_Background_colour_Unchecked"/>
+                    <CheckBox x:Name="SwitchBrushMode" Content="White brush" HorizontalAlignment="Left" Margin="-125,17,0,-2" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                    <Button x:Name="Btn_BezierCurve" Content="" Margin="10,10,-40,-30" Click="Btn_BezierCurve_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\BezierCurve.PNG"/>
+                        </Button.Background>
+                    </Button>
+                </RibbonGroup>
+                <RibbonGroup Header="Colours" Height="105" Margin="0" VerticalAlignment="Top" Width="186">
+                    <WpfControlLibrary1:UserControl1 x:Name="ColourPicker" HorizontalAlignment="Left" Height="111" Margin="-14,-6,0,-37" VerticalAlignment="Top" Width="200" ColorChanged="ColorChangedHandler" Loaded="ColourPicker_Loaded"/>
+                </RibbonGroup>
+                <RibbonGroup Header="Shapes and Drawing" Height="105" Margin="0" VerticalAlignment="Top" Width="211">
+                    <Button x:Name="Btn_ellipse" Content="Ellipse" HorizontalAlignment="Left" Margin="0,62,-35,-42" VerticalAlignment="Top" Width="75" Click="Btn_ellipse_Click"/>
+                    <Button x:Name="Btn_strokesSquare" Content="Square" HorizontalAlignment="Left" Margin="97,23,-132,-3" Width="75" Height="20" VerticalAlignment="Top" Click="Btn_strokesSquare_Click"/>
+                    <Button x:Name="Btn_polyline" Content="Polyline" HorizontalAlignment="Left" Margin="76,10,-111,10" Width="75" Click="Btn_polyline_Click"/>
+                    <Button x:Name="Button_polygonSquare" Content="PolySqre" Margin="80,0,-150,0" Click="Button_polygonSquare_1"/>
+                    <Button x:Name="BtnDraw_Arc" Content="" Margin="-35,-51,-16,12" Click="BtnDraw_Arc_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="G:\University of suffolk\Level 5\Advanced software development\WPF\WpfAnimationsApp\Icons\arcicn.PNG"/>
+                        </Button.Background>
+                    </Button>
+                    <RibbonButton x:Name="Btn_Paste" Content="Paste" Margin="-17,10,-25,-7" VerticalAlignment="Top" Height="37" Click="Btn_Paste_Click" BorderBrush="Black" Background="#FFCED9DA"/>
+                    <Label Content="Paste" HorizontalAlignment="Left" Margin="-14,-28,-24,0" VerticalAlignment="Top"/>
+                </RibbonGroup>
+                <RibbonGroup Header="Animations" Height="105" Margin="0" VerticalAlignment="Top" Width="228">
+                    <Button x:Name="BtnFade_animate" Content="Fade Animation" HorizontalAlignment="Left" Margin="10,10,-50,0" VerticalAlignment="Top" Width="80" Click="BtnFade_animate_Click"/>
+                    <Button x:Name="Btn_rotate_animation" Content="Rotate" HorizontalAlignment="Left" Margin="10,10,-66,0" VerticalAlignment="Top" Width="75" Click="Btn_rotate_animation_Click"/>
+                    <Button x:Name="Btn_pathAnimation" Content="Animate path" HorizontalAlignment="Left" Margin="10,10,-54,-30" VerticalAlignment="Top" Width="84" Click="Btn_pathAnimation_Click"/>
+                    <ComboBox x:Name="AnimationFade_Combobox" HorizontalAlignment="Left" Margin="109,-24,-177,0" VerticalAlignment="Top" Width="96" SelectionChanged="Animation_Combobox_SelectionChanged" IsEditable="True">
+                        <ComboBoxItem  x:Name="Item_Square_fade" IsSelected="True" Selected="Item_Square_fade_Selected" Content="Fade Square"/>
+                        <ComboBoxItem  x:Name="Item_Ellipse_fade" Selected="Item_Ellipse_fade_Selected" Content="Fade Ellipse"/>
+                        <ComboBoxItem  x:Name="Item_Triangle_fade" Selected="Item_Triangle_fade_Selected" Content="Fade Triangle"/>
+                    </ComboBox>
+                    <ComboBox x:Name="AnimationColour_Combobox" HorizontalAlignment="Left" Margin="111,-53,-182,0" VerticalAlignment="Top" Width="99" IsEditable="True">
+                        <ComboBoxItem  x:Name="Item_Square_color" IsSelected="True" Selected="Item_Square_color_Selected" Content="Colour Square"/>
+                        <ComboBoxItem  x:Name="Item_Ellipse_color" Selected="Item_Ellipse_color_Selected" Content="Colour Ellipse"/>
+                        <ComboBoxItem  x:Name="Item_Triangle_color" Selected="Item_Triangle_color_Selected" Content="Colour Triangle"/>
+                    </ComboBox>
+                    <Button x:Name="Btn_animatePolyline" Content="Line animation" HorizontalAlignment="Left" Margin="71,64,-124,-44" VerticalAlignment="Top" Width="93" Click="Btn_animatePolyline_Click"/>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+        <InkCanvas x:Name="animationInkCanvas" HorizontalAlignment="Left" Height="297" Margin="26,181,0,0" VerticalAlignment="Top" Width="905" Background="#FFCED9DA" MouseLeftButtonDown="animationInkCanvas_MouseLeftButtonDown" MouseUp="animationInkCanvas_MouseUp"/>
+        <Image Name="image1" Margin="10,35,-10,-35" />
+        <StatusBar HorizontalAlignment="Left" Height="36" Margin="0,541,0,0" VerticalAlignment="Top" Width="957">
+            <Button x:Name="Btn_Delete" Content="Clear" Width="43" Height="20" Click="Btn_Delete_Click"/>
+            <Button x:Name="Btn_undo" Content="Undo" Width="48" Click="Btn_undo_Click"/>
+            <Button x:Name="Btn_Select" Content="Select" Width="48" Click="Btn_Select_Click"/>
+            <Button x:Name="Btn_eraser" Content="Eraser" Width="54" Click="Btn_eraser_Click"/>
+            <Button x:Name="Strokes_Delete" Content="Del Strokes" Width="65" Click="Strokes_Delete_Click"/>
+            <Button x:Name="endAnimation" Content="Finish" Width="51" Click="endAnimation_Click"/>
+            <Button x:Name="Btn_ImgScale" Content="Scale Image" Width="51" Click="Btn_ImgScale_Click"/>
+        </StatusBar>
+        <StackPanel Height="59" Margin="0,482,0,0" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+
+            <ListBox x:Name="TimeListBox" Height="57" 
+                     Margin="0,0,453,0"
+                     Background="Transparent"
+                     ItemsSource="{Binding TimeLines}"/>
+            <Border BorderBrush="Black" BorderThickness="1" Height="35">
+            </Border>
+        </StackPanel>
+        <RibbonTwoLineText HorizontalAlignment="Left" Margin="54,-231,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</Window>

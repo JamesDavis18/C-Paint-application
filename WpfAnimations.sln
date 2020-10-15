@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPaint", "WpfPaint\WpfPaint.csproj", "{D137A5FF-F80F-4DFC-8EF6-43DC8DB10076}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{54C5DE1B-EBDC-4CFC-920A-29EBC230F9D2}"
+	ProjectSection(SolutionItems) = preProject
+		Icons\highliterIcn.png = Icons\highliterIcn.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibrary1", "WpfControlLibrary1\WpfControlLibrary1.csproj", "{A15E9E3C-FC69-4BBD-9417-63B9CF6F444E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{18210889-E754-493E-9162-020C8EC53AB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEditingControlLibrary", "WpfEditingControlLibrary\WpfEditingControlLibrary.csproj", "{7FC74849-D362-4DEA-86D7-2C1CF61A8FD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D137A5FF-F80F-4DFC-8EF6-43DC8DB10076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D137A5FF-F80F-4DFC-8EF6-43DC8DB10076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D137A5FF-F80F-4DFC-8EF6-43DC8DB10076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D137A5FF-F80F-4DFC-8EF6-43DC8DB10076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15E9E3C-FC69-4BBD-9417-63B9CF6F444E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15E9E3C-FC69-4BBD-9417-63B9CF6F444E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15E9E3C-FC69-4BBD-9417-63B9CF6F444E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15E9E3C-FC69-4BBD-9417-63B9CF6F444E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18210889-E754-493E-9162-020C8EC53AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18210889-E754-493E-9162-020C8EC53AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18210889-E754-493E-9162-020C8EC53AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18210889-E754-493E-9162-020C8EC53AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC74849-D362-4DEA-86D7-2C1CF61A8FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC74849-D362-4DEA-86D7-2C1CF61A8FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC74849-D362-4DEA-86D7-2C1CF61A8FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC74849-D362-4DEA-86D7-2C1CF61A8FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC3743C8-D0A5-4ED0-91C6-5B3818A5DF59}
+	EndGlobalSection
+EndGlobal
